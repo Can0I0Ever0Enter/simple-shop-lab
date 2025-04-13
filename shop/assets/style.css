@@ -1,0 +1,149 @@
+/* assets/style.css */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background: #fff;
+}
+
+.product img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #5cb85c;
+    margin: 10px 0;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.cart-table th {
+    background-color: #f2f2f2;
+}
+
+.cart-actions a, .cart-actions button, .button, button {
+    display: inline-block;
+    background-color: #5cb85c;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.cart-actions a.remove, .cart-actions button.remove {
+    background-color: #d9534f;
+}
+
+.cart-actions input[type="number"] {
+    width: 50px;
+    padding: 5px;
+}
+
+.checkout-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkout-form input[type="text"],
+.checkout-form textarea {
+    width: 95%; /* Чуть меньше для padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.total {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.message {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+.message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+.message.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+.message.info {
+    background-color: #d9edf7;
+    color: #31708f;
+    border: 1px solid #bce8f1;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
